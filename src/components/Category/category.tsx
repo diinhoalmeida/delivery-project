@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
-import { categories } from "../../data/data.js";
+import { categories } from "../../data/data.ts";
 
 const Category = () => {
   return (
@@ -15,6 +15,7 @@ const Category = () => {
       >
         {categories.map((item, index) => (
           <Flex
+            className="category-item"
             bgColor="gray.100"
             rounded="lg"
             p={4}
