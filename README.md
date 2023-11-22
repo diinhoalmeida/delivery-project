@@ -21,6 +21,13 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - React Router DOM: uma biblioteca de roteamento para React que permite a navegação entre as páginas do aplicativo.
 - Manipulação de DOM: técnicas para manipular o Document Object Model (DOM) para redimensionar imagens e aplicar animações de hover.
 
+## Testes Automatizados
+
+O projeto foi feito seguido de testes, sendo eles testes unitários, de integração de testes E2E:
+
+- Jest: Utilizado para realizar testes automatizados no projeto. O Jest é um framework de teste JavaScript que se destaca pela simplicidade e eficácia. Ele facilita a escrita e execução de testes unitários, integração e snapshots.
+- React Testing Library: Empregado para testar componentes React. Esta biblioteca se concentra em testar a aplicação da perspectiva do usuário, incentivando práticas que simulam a interação do usuário com a aplicação.
+
 ## Estrutura do Projeto
 
 A estrutura do projeto segue uma organização de componentes reutilizáveis. Abaixo está um exemplo da estrutura de diretórios do projeto:
