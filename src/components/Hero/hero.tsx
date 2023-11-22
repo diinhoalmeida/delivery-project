@@ -2,7 +2,7 @@ import { Box, Image, Text } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <Box maxW={1640} mx="auto" p={4}>
+    <Box maxW={1640} mx="auto" p={4} data-testid="hero-box">
       <Box maxH={500} pos="relative">
         {/* Overlay */}
         <Box
@@ -29,7 +29,7 @@ const Hero = () => {
           maxH={500}
           objectFit="cover"
           src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="/"
+          alt="hamburguer image banner"
         />
       </Box>
     </Box>
