@@ -39,10 +39,15 @@ A estrutura do projeto segue uma organização de componentes reutilizáveis. Ab
 │   ├── assets/
 │   ├── components/
 │   │   ├── Category/
+│   │   │   └──__tests__
 │   │   ├── Food/
+│   │   │   └──__tests__
 │   │   ├── HeadlineCards/
+│   │   │   └──__tests__
 │   │   ├── Hero/
+│   │   │   └──__tests__
 │   │   ├── NavBar/
+│   │   │   └──__tests__
 │   │   └── index.tsx
 │   ├── data/
 │   ├── app.tsx
