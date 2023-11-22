@@ -4,12 +4,18 @@ import { AiOutlineMenu } from "react-icons/ai";
 interface NavBarLeftProps {
   nav: boolean;
   setNav: (arg: boolean) => void;
+  id: string;
 }
 
-function NavBarLeft({ nav, setNav }: NavBarLeftProps) {
+function NavBarLeft({ nav, setNav, id }: NavBarLeftProps) {
   return (
-    <Box display="flex" alignItems="center">
-      <Box onClick={() => setNav(!nav)} cursor="pointer">
+    <Box
+      onClick={() => setNav(!nav)}
+      display="flex"
+      alignItems="center"
+      data-testid={id}
+    >
+      <Box cursor="pointer">
         <AiOutlineMenu size={30} />
       </Box>
       <Text fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }} px={2}>
