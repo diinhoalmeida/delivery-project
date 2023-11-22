@@ -1,11 +1,16 @@
 import { Box } from "@chakra-ui/react";
 
-function NavBarOverlay() {
+interface NavBarOverlayProps {
+  id: string;
+}
+
+function NavBarOverlay({ id }: NavBarOverlayProps) {
   return (
     <Box
       bgColor="blackAlpha.300"
       pos="fixed"
       w="full"
+      data-testid={id}
       h="full"
       zIndex={10}
       top={0}

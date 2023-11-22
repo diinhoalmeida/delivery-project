@@ -19,16 +19,16 @@ function NavBar() {
       p={4}
     >
       {/* Left side */}
-      <NavbarLeft nav={nav} setNav={setNav} />
+      <NavbarLeft nav={nav} setNav={setNav} id="navbar-left" />
 
       {/* Search Input */}
-      <NavBarSearchInput />
+      <NavBarSearchInput id="search-input" />
 
       {/* Cart button */}
-      <NavBarCartButton />
+      <NavBarCartButton id="cart-button" />
 
       {/* Mobile Menu */}
-      {nav && <NavBarOverlay />}
+      {nav && <NavBarOverlay id="navbar-overlay" />}
 
       {/* Side drawer menu */}
       <NavBarSideDrawer nav={nav} setNav={setNav} />

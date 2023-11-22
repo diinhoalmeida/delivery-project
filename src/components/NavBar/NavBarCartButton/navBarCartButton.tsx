@@ -1,10 +1,15 @@
 import { Box } from "@chakra-ui/layout";
 import { BsFillCartFill } from "react-icons/bs";
 
-function NavBarCartButton() {
+interface NavBarCartButtonProps {
+  id: string;
+}
+
+function NavBarCartButton({ id }: NavBarCartButtonProps) {
   return (
     <Box
       bgColor="black"
+      data-testid={id}
       textColor="white"
       display={{ base: "none", md: "flex" }}
       alignItems="center"
