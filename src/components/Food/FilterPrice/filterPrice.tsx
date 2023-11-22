@@ -33,7 +33,7 @@ const FilterPrice = ({ setFoods, data }: FilterPriceProps) => {
           textColor="#DD6B20"
           _hover={{ bgColor: "#DD6B20", textColor: "white" }}
         >
-          $$
+          $ $
         </Button>
         <Button
           onClick={() => filterPrice("$$$")}
@@ -42,7 +42,7 @@ const FilterPrice = ({ setFoods, data }: FilterPriceProps) => {
           textColor="#DD6B20"
           _hover={{ bgColor: "#DD6B20", textColor: "white" }}
         >
-          $$$
+          $ $ $
         </Button>
         <Button
           onClick={() => filterPrice("$$$$")}
@@ -51,7 +51,7 @@ const FilterPrice = ({ setFoods, data }: FilterPriceProps) => {
           textColor="#DD6B20"
           _hover={{ bgColor: "#DD6B20", textColor: "white" }}
         >
-          $$$$
+          $ $ $ $
         </Button>
       </Flex>
     </Box>

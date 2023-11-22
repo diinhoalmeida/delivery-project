@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { DataItems, data } from "../../data/data.js";
+import { DataItems, data } from "../../data/data.ts";
 import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
-import FilterType from "./FilterType/filterType.js";
-import FilterPrice from "./FilterPrice/filterPrice.js";
+import FilterType from "./FilterType/filterType.tsx";
+import FilterPrice from "./FilterPrice/filterPrice.tsx";
 
 const Food = () => {
   const [foods, setFoods] = useState<DataItems[]>(data);
