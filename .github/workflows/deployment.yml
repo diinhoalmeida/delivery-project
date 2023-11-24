@@ -36,34 +36,34 @@ jobs:
       - name: Build
         run: npm run build
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Check out code
+  #       uses: actions/checkout@v2
 
-      - name: Set up Git
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+  #     - name: Set up Git
+  #       run: |
+  #         git config user.name "${{ github.actor }}"
+  #         git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-      - name: Configure Git credentials
-        run: echo "machine github.com login ${{ github.actor }} password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+  #     - name: Configure Git credentials
+  #       run: echo "machine github.com login ${{ github.actor }} password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
 
-      - name: Update branch remote
-        run: git remote update
+  #     - name: Update branch remote
+  #       run: git remote update
 
-      - name: Fetch to new infos
-        run: git fetch
+  #     - name: Fetch to new infos
+  #       run: git fetch
 
-      - name: Switch to main branch
-        if: success()
-        run: git checkout main
+  #     - name: Switch to main branch
+  #       if: success()
+  #       run: git checkout main
 
-      - name: Pull latest changes from develop
-        run: git pull --rebase origin develop
+  #     - name: Pull latest changes from develop
+  #       run: git pull --rebase origin develop
 
-      - name: Push to main if tests pass
-        if: success()
-        run: git push origin main
+  #     - name: Push to main if tests pass
+  #       if: success()
+  #       run: git push origin main
