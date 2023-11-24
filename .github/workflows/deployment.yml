@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Push to main if tests pass
-        if: success('build')
+        if: success()
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
