@@ -46,6 +46,12 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
+      - name: Update branch remote
+        run: git remote update
+
+      - name: Fetch to new infos
+        run: git fetch
+
       - name: Switch to main branch
         run: git checkout main
 
