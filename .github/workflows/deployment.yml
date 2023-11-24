@@ -55,8 +55,8 @@ jobs:
       - name: Switch to main branch
         run: git checkout main
 
-      - name: Merge develop into main
-        run: git merge --ff-only --allow-unrelated-histories develop
+      - name: Rebase develop into main
+        run: git pull --rebase origin develop
 
       - name: Push to main if tests pass
         if: success()
