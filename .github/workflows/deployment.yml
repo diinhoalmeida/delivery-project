@@ -58,6 +58,9 @@ jobs:
         run: git checkout main
 
       - name: Rebase develop into main
+        run: git pull
+
+      - name: Rebase develop into main
         run: git merge develop
 
       - name: Push to main if tests pass
