@@ -54,12 +54,11 @@ jobs:
       - name: Fetch to new infos
         run: git fetch
 
-        - name: If fetch success
-       
+      - name: If fetch success
         run: git push origin develop
 
       - name: Switch to main branch
-       if: success()
+        if: success()
         run: git checkout main
 
       - name: Rebase develop into main
