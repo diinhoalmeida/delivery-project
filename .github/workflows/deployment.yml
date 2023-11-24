@@ -55,10 +55,10 @@ jobs:
         run: git fetch
 
       - name: Switch to main branch
-        run: git checkout main
+        run: git pull origin main
 
-      - name: Rebase develop into main
-        run: git pull
+      - name: Switch to main branch
+        run: git checkout main
 
       - name: Rebase develop into main
         run: git merge develop --allow-unrelated-histories
