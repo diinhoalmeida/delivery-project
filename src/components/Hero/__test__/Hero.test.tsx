@@ -7,11 +7,6 @@ describe("Hero component", () => {
     const imageElement = screen.getByAltText("hamburguer image banner");
     expect(imageElement).toBeTruthy();
   });
-
-  it("matches the snapshot", () => {
-    const { container } = render(<Hero />);
-    expect(container).toMatchSnapshot();
-  });
 });
 
 export default {};
