@@ -56,7 +56,7 @@ jobs:
         run: git checkout main
 
       - name: Merge develop into main
-        run: git merge --ff-only develop
+        run: git merge --ff-only --allow-unrelated-histories develop
 
       - name: Push to main if tests pass
         if: success()
