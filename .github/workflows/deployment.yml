@@ -58,7 +58,7 @@ jobs:
         run: git checkout main
 
       - name: Rebase develop into main
-        run: git merge develop --allow-unrelated-histories
+        run: git merge develop
 
       - name: Push to main if tests pass
         if: success()
