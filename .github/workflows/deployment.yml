@@ -61,8 +61,8 @@ jobs:
         if: success()
         run: git checkout main
 
-      - name: Rebase develop into main
-        run: git pull origin develop
+      - name: Pull latest changes from develop
+        run: git pull --rebase origin develop
 
       - name: Push to main if tests pass
         if: success()
