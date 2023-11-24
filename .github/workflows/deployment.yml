@@ -55,9 +55,6 @@ jobs:
         run: git fetch
 
       - name: Switch to main branch
-        run: git pull origin main
-
-      - name: Switch to main branch
         run: git checkout main
 
       - name: Rebase develop into main
